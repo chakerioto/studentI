@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra Cứu</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- <link href="/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="header__content">
+            <div class="header__content__nav">
+                <ul>
+                    <li>
+                        <a class="white-link" href="#">NTU</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a class="white-link" href="#">Thư viện</a>
+                        <span>|</span>
+                    </li>
+                    <li>
+                        <a class="white-link" href="#">Webmail</a>
+                        <span>|</span>
+
+                    </li>
+                    <li>
+                        <a class="white-link" href="#">E-Learning</a>
+                        <span>|</span>
+
+
+                    </li>
+                    <li>
+                        <a class="white-link" href="#">English</a>
+                        <span>|</span>
+
+                    </li>
+                    <li>
+                        <a class="white-link" href="#">Tra cứu văn bằng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__content__body">
+                <div class="header__content__body--brand">
+                    <img src="./dhnt2017.png" alt="img" />
+                </div>
+                <div class="header__content__body--login">
+                        <div class="login content-end">
+                            <a class="loginLink" href="#">
+                                Đăng
+                                nhập
+                            </a>
+                        </div>
+                        <div>
+                            <ul class="content-end">
+                                <li>
+                                    <a class="white-link" href="#">
+                                        Cán bộ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="white-link" href="#">
+                                        Giảng
+                                        viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="white-link" href="#">
+                                        Sinh
+                                        viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="white-link" href="#">
+                                        Cựu
+                                        sinh viên
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="white-link" href="#">
+                                        Tham
+                                        quan Trường
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panes">
+        <div class="panes__content">
+            <ul class="panes__content__list">
+                <li>
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                
+                <li>
+                    <a href="#">Đào tạo</a>
+                </li>
+                
+                <li>
+                    <a href="#">Khoa học công nghệ</a>
+                </li>
+                
+                <li>
+                    <a href="#">Hợp tác đối ngoại</a>
+                </li>
+                
+                <li>
+                    <a href="#">Tuyển sinh </a>
+                </li>
+                
+                <li>
+                    <a href="#">Sinh viên</a>
+                </li>
+                
+                <li>
+                    <a href="#">Doanh nghiệp & việc làm </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="search">
+        <div class="search__content">
+            <div class="search__content__title">
+                Tra cứu sinh viên tốt nghiệp
+            </div>
+            <div class="search__content__form">
+                <form id="myForm" name="myForm">
+                    <label for="lname">Nhập Mã số Sinh viên (hoặc Số văn bằng ) để tra cứu:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Nhập MSSV (Số văn bằng)">
+
+                    <label for="pwd">Nhập mật khẩu:</label><br>
+                    <input type="text" id="pwd" name="pwd" placeholder="Nhập mật khẩu ">
+                    <input type="submit" value="Đồng ý">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            © 2012 Trường Đại Học Nha Trang
+        </p>
+        <p>
+            Địa chỉ: số 02 Nguyễn Đình Chiểu - Nha Trang - Khánh Hòa. ĐT: 0583 831 149
+        </p>
+        <p>
+            Website được thể hiện tốt nhất ở độ phân giải 1024 x 768 với trình duyệt FireFox, Google Chrome, Internet Explorer 7.0 trở lên.
+        </p>
+    </div>
+
+
+
+    <script>
+       var form = document.getElementById("myForm");
+        console.log(form , 'form')
+        form.onsubmit = function(e){
+        e.preventDefault();
+        var studentId = document.getElementById("lname").value;
+        console.log(studentId , 'studentId');
+        var pwd = document.getElementById("pwd").value;
+        console.log(pwd ,'pwd');
+    }
+    </script>
+</body>
+</html>
