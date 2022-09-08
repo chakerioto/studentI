@@ -17,11 +17,34 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: white;
     background-color: #f4f4f4;
+    overflow:scroll;
+    padding-bottom: 200px;
 }
 
 ul ,li {
     list-style-type: none;
 }
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid var(--blue);
+  }
+th {
+    padding: 4px 0;
+    background-color: var(--blue);
+}
+td {
+    padding: 4px 10px;
+    color:black;
+}
+.hidden {
+    display: none
+}
+.block {
+    display: block;
+}
+
 .white-link {
     text-decoration: none;
     color: white;
@@ -158,6 +181,25 @@ ul ,li {
    font-size: 14px;
 }
 
+.search .search__content .search__content__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 30px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.search .search__content .search__content__table {
+    width: 100%;
+}
+.search .search__content .search__content__table--table {
+    width: 100%;
+}
+
 
 .footer {
     display: flex;
@@ -166,10 +208,10 @@ ul ,li {
     flex-direction: column;
     gap:4px;
     font-size: 13px;
-
     padding: 10px;
     background: var(--blue);
     position: fixed;
-    bottom: 0;
+     bottom: 0; 
     width: 100%;
+    height:100px;
 }

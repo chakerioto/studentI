@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tra Cứu</title>
     <link rel="stylesheet" href="mystyle.css">
-    <!-- <link href="/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <div class="header">
         <div class="header__content">
@@ -48,45 +49,45 @@
                     <img src="./dhnt2017.png" alt="img" />
                 </div>
                 <div class="header__content__body--login">
-                        <div class="login content-end">
-                            <a class="loginLink" href="#">
-                                Đăng
-                                nhập
-                            </a>
-                        </div>
-                        <div>
-                            <ul class="content-end">
-                                <li>
-                                    <a class="white-link" href="#">
-                                        Cán bộ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="white-link" href="#">
-                                        Giảng
-                                        viên
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="white-link" href="#">
-                                        Sinh
-                                        viên
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="white-link" href="#">
-                                        Cựu
-                                        sinh viên
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="white-link" href="#">
-                                        Tham
-                                        quan Trường
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="login content-end">
+                        <a class="loginLink" href="#">
+                            Đăng
+                            nhập
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="content-end">
+                            <li>
+                                <a class="white-link" href="#">
+                                    Cán bộ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="white-link" href="#">
+                                    Giảng
+                                    viên
+                                </a>
+                            </li>
+                            <li>
+                                <a class="white-link" href="#">
+                                    Sinh
+                                    viên
+                                </a>
+                            </li>
+                            <li>
+                                <a class="white-link" href="#">
+                                    Cựu
+                                    sinh viên
+                                </a>
+                            </li>
+                            <li>
+                                <a class="white-link" href="#">
+                                    Tham
+                                    quan Trường
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,27 +101,27 @@
                 <li>
                     <a href="#">Giới thiệu</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Đào tạo</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Khoa học công nghệ</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Hợp tác đối ngoại</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Tuyển sinh </a>
                 </li>
-                
+
                 <li>
                     <a href="#">Sinh viên</a>
                 </li>
-                
+
                 <li>
                     <a href="#">Doanh nghiệp & việc làm </a>
                 </li>
@@ -144,6 +145,39 @@
             </div>
         </div>
     </div>
+
+    <div class="search hidden" id="hidden-div">
+        <div class="search__content">
+            <div class="search__content__title">
+                Kết quả tìm kiếm:
+            </div>
+            <div class="search__content__info">
+                <div class="studenInfo" id="studenInfo">
+                </div>
+                <div id="studentName"></div>
+                <div id="birthDay"></div>
+                <div id="school"></div>
+                <div id="studyTime"></div>
+                <div id="rank"></div>
+                <div id="identifier"></div>
+                <div id="bookNumber"></div>
+                <div id="class"></div>
+                <div class="student__table">
+                </div>
+            </div>
+            <div class="search__content__table">
+                <table class="search__content__table--table" id="myTable">
+                    <tr>
+                        <th id="myTh">Tên học phần</th>
+                        <th id="myTh">DVHT</th>
+                        <th id="myTh">Điểm</th>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
     <div class="footer">
         <p>
             © 2012 Trường Đại Học Nha Trang
@@ -152,22 +186,15 @@
             Địa chỉ: số 02 Nguyễn Đình Chiểu - Nha Trang - Khánh Hòa. ĐT: 0583 831 149
         </p>
         <p>
-            Website được thể hiện tốt nhất ở độ phân giải 1024 x 768 với trình duyệt FireFox, Google Chrome, Internet Explorer 7.0 trở lên.
+            Website được thể hiện tốt nhất ở độ phân giải 1024 x 768 với trình duyệt FireFox, Google Chrome, Internet
+            Explorer 7.0 trở lên.
         </p>
     </div>
 
 
 
-    <script>
-       var form = document.getElementById("myForm");
-        console.log(form , 'form')
-        form.onsubmit = function(e){
-        e.preventDefault();
-        var studentId = document.getElementById("lname").value;
-        console.log(studentId , 'studentId');
-        var pwd = document.getElementById("pwd").value;
-        console.log(pwd ,'pwd');
-    }
-    </script>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
